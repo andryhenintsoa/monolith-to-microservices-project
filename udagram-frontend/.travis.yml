@@ -15,8 +15,8 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t udagram-api-feed .
-  - docker tag udagram-api-feed andryhenintsoa/udagram-api-feed:latest
+  - docker build -t udagram-frontend .
+  - docker tag udagram-frontend andryhenintsoa/udagram-frontend:latest
 
 # Tâches à effectuer après la réussite du processus. Le formatage du nom d'utilisateur et du mot de passe Docker comme indiqué ci-dessous vous permet de vous connecter par programmation sans que le mot de passe soit exposé dans les journaux.
 after_success:
